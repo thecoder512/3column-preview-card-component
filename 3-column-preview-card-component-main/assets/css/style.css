@@ -1,0 +1,131 @@
+/*     GOOGLE FONTS       */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700&family=Lexend+Deca&display=swap');
+
+/*      ROOT      */
+:root{
+    --main__color:hsl(0, 0%, 95%);
+    --second__color: hsla(0, 0%, 100%, 0.623);
+
+    --card__1__color: hsl(31, 77%, 52%);
+    --card__2__color: hsl(184, 100%, 22%);
+    --card__3__color: hsl(179, 100%, 13%);
+}
+
+/*      BASICS           */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--main__color);
+    font-size: 15px;
+}
+
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+
+/*         main         */
+
+.main{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden; 
+}
+
+.main__content{
+    display: flex;
+    margin: 15%;
+}
+
+.card__content{
+    padding: 4rem;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--main__color);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+p{
+    color: var(--second__color);
+    margin-bottom: 4.5rem;
+    line-height: 1.5rem;
+}
+
+.card__text a{
+    text-decoration: none;
+    border: 2.5px solid var(--main__color);
+    border-radius: 50px;
+    padding: .9rem 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.btn-1{
+    color: var(--card__1__color);
+    background-color: var(--main__color);
+}
+
+.btn-2{
+    color: var(--card__2__color);
+    background-color: var(--main__color);
+}
+
+.btn-3{
+    color: var(--card__3__color);
+    background-color: var(--main__color);
+}
+
+.card__content:nth-of-type(1){
+    background-color: var(--card__1__color);
+}
+
+.card__content:nth-of-type(2){
+    background-color: var(--card__2__color);
+}
+
+.card__content:nth-of-type(3){
+    background-color: var(--card__3__color);
+}
+
+
+
+.attribution{
+    background-color: tomato;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 975px) {
+    .main__content{
+        display: grid;
+    }
+}
